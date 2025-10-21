@@ -1,0 +1,23 @@
+!
+interface FastEthernet0/1
+ switchport access vlan 10
+ switchport mode access
+!
+interface FastEthernet0/2
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/3
+ switchport access vlan 30
+ switchport mode access
+!
+!
+interface GigabitEthernet0/1
+ switchport trunk native vlan 99
+ switchport mode trunk
+!
+interface GigabitEthernet0/2
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 1,10,20,30,99
+ switchport mode trunk
+!
