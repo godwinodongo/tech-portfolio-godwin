@@ -140,7 +140,7 @@ Designing networks for redundancy and centralized control.
 
 <a href="/configs" target="_blank">Router & Switch Configs</a>
 
-<a href="/tests" target="_blank">Testing Results</a>
+<a href="/tests" target="/tests">Testing Results</a>
 
 
 <b>🏁 Future Enhancements</b>
