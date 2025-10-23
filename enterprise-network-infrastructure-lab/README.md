@@ -138,7 +138,7 @@ Designing networks for redundancy and centralized control.
 
 <a href="https://github.com/godwinodongo/tech-portfolio-godwin/raw/refs/heads/main/enterprise-network-infrastructure-lab/packet_tracer/enterprise_network_lab.pkt" target="_blank">Packet Tracer Simulation</a>
 
-<a href="/configs" target="_blank">Router & Switch Configs</a>
+<a href="./configs" target="/tests">Router & Switch Configs</a>
 
 <a href="./tests" target="/tests">Testing Results</a>
 
