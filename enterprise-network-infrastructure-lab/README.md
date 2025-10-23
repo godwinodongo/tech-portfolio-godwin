@@ -144,3 +144,12 @@ Packet Tracer Simulation
 Router & Switch Configs
 
 Testing Results
+
+
+🏁 Future Enhancements
+
+Add OSPF routing for dynamic route updates.
+
+Integrate Syslog and SNMP monitoring.
+
+Implement redundancy with HSRP/VRRP.
