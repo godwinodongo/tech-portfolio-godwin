@@ -1,1 +1,7 @@
+### ✅ DHCP Relay Test
+Branch PCs received IPs from HQ DHCP Server (192.168.10.10).
+![DHCP Lease Table](./tests/screenshots/dhcp_leases.png)
+
+### ✅ Site Connectivity
+Ping from Branch VLAN40 → HQ Server successful.
 
