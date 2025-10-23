@@ -2,8 +2,11 @@
 
 <b>Author: Godwin Odongo
 Tools: Cisco Packet Tracer 8.2, pfSense, Draw.io, Windows Server
+
 Status: Completed ✅
+
 Date: May 2025</b>
+
 
 <b>🔧 Project Overview</b>
 
