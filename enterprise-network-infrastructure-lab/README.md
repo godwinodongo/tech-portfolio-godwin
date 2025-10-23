@@ -182,6 +182,7 @@ Router routes
 Traceroute via VPN link
 <img width="864" height="890" alt="image" src="https://github.com/user-attachments/assets/70f6c745-389f-42e6-8e02-0653f377aab5" />
 
+<b>This project is part of my Systems & Network Administration portfolio — designed to demonstrate enterprise-level network design, configuration, and documentation skills relevant to roles such as IT Systems Administrator and Network Engineer.</b>
 
 
 
