@@ -1,61 +1,166 @@
-# Godwin Odongo – Tech Portfolio 🚀  
+# Network Automation Toolkit (Python + Netmiko)
 
-Welcome to my professional portfolio!  
-I specialize in **Cybersecurity, Data Science, and IT Support**.  
-This repository highlights **hands-on projects, case studies, and practical solutions** that reflect my expertise in building secure systems, analyzing data, and solving everyday IT problems.  
+A Python-based network automation toolkit designed to manage MikroTik routers using SSH automation.
 
----
-
-## 📂 Portfolio Sections  
-
-### 🔐 Cybersecurity  
-- 🛡️ Penetration Testing Labs (Kali Linux, OWASP Juice Shop, Metasploitable)  
-- 📝 Vulnerability Assessment Reports (Nessus, OpenVAS)  
-- 🎯 CTF Writeups (TryHackMe, HackTheBox)  
-- 🔍 Forensic analysis & incident response case studies  
-
-👉 [Explore Cybersecurity Projects](./cybersecurity)  
+This project demonstrates how network engineers can automate common operational tasks such as configuration backups, VLAN deployment, and compliance auditing across multiple devices.
 
 ---
 
-### 📊 Data Science  
-- 📈 Exploratory Data Analysis (EDA) with real-world datasets  
-- 🤖 Predictive Modeling (Regression & Logistic Regression)  
-- 🧩 Customer Segmentation using K-Means Clustering  
-- 🌐 Interactive Dashboards with Streamlit  
+## Project Overview
 
-👉 [Explore Data Science Projects](./data-science)  
+Managing network devices manually becomes inefficient and error-prone as infrastructure grows. This toolkit automates repetitive tasks using Python and Netmiko, allowing engineers to interact with routers programmatically.
+
+The tool connects to devices via SSH and executes RouterOS commands automatically.
 
 ---
 
-### 🖥️ IT Support  
-- ⚡ Step-by-step troubleshooting guides (Wi-Fi, Outlook, Windows updates, etc.)  
-- 🗂️ Active Directory Setup & Group Policies  
-- ☁️ Microsoft 365 troubleshooting (Teams, OneDrive, Exchange)  
-- 🛠️ Case studies simulating real-world IT support  
+## Features
 
-👉 [Explore IT Support Projects](./it-support)  
+### 1. Automated Configuration Backup
 
----
+Creates timestamped backups of router configurations.
 
-## 📖 About Me  
-👋 Hi, I’m **Godwin Odongo**, an IT professional passionate about:  
-- Cybersecurity (Penetration Testing, Vulnerability Management, Incident Response)  
-- Data Science (Machine Learning, Predictive Analytics, Business Insights)  
-- IT Support (System Administration, Cloud Services, End-user Support)  
+Command:
 
-I’m constantly learning, building projects, and helping businesses leverage technology securely and efficiently.  
+```
+python netauto.py backup
+```
 
----
+Output example:
 
-## 🌐 Connect With Me  
-- 🔗 [LinkedIn](https://linkedin.com/in/godwin-odongo)    
-- 📧 [Email Me](mailto:godwinodongo1@gmail.com)  
+```
+Backup saved: backup_192.168.100.11_2026-03-14_10-20.rsc
+```
 
 ---
 
-### ⚖️ License  
-This repository is licensed under the [MIT License](./LICENSE).  
+### 2. VLAN Deployment Automation
+
+Automatically creates VLAN interfaces across devices.
+
+Command:
+
+```
+python netauto.py vlan
+```
+
+Example VLANs deployed:
+
+* VLAN10 – SALES
+* VLAN20 – HR
+* VLAN30 – CCTV
 
 ---
-⭐ If you like my work, consider giving this repository a star!
+
+### 3. Network Compliance Audit
+
+Checks network configuration against required standards.
+
+Command:
+
+```
+python netauto.py audit
+```
+
+Example output:
+
+```
+Auditing 192.168.100.11
+✔ SSH enabled
+✔ DNS configured
+✔ VLAN10 exists
+```
+
+---
+
+## Project Architecture
+
+```
+network-automation-toolkit
+│
+├── devices.py        # Network device inventory
+├── backup.py         # Configuration backup module
+├── vlan.py           # VLAN automation module
+├── audit.py          # Compliance auditing module
+├── netauto.py        # Main CLI automation tool
+│
+├── requirements.txt  # Python dependencies
+└── README.md
+```
+
+---
+
+## Technologies Used
+
+* Python
+* Netmiko
+* SSH Automation
+* MikroTik RouterOS
+
+---
+
+## Requirements
+
+Python 3.8+
+
+Install dependencies:
+
+```
+pip install -r requirements.txt
+```
+
+---
+
+## Device Inventory
+
+Devices are defined inside:
+
+```
+devices.py
+```
+
+Example:
+
+```
+devices = [
+    {
+        "device_type": "mikrotik_routeros",
+        "host": "192.168.100.11",
+        "username": "admin",
+        "password": ""
+    }
+]
+```
+
+Multiple routers can be added to automate larger networks.
+
+---
+
+## Example Use Cases
+
+This toolkit can be used for:
+
+* Automated router configuration backups
+* VLAN deployment across branch networks
+* Infrastructure compliance auditing
+* Network operations automation
+
+---
+
+## Future Improvements
+
+Planned enhancements:
+
+* Parallel execution for faster automation
+* HTML compliance reporting
+* Scheduled backups
+* CSV/JSON device inventory
+* Configuration version control
+
+---
+
+## Author: Odongo Oduor Godwin
+
+Network Automation Project built using Python and Netmiko for infrastructure management.
+
+---
